@@ -24,6 +24,7 @@ abstract class DAO extends PDO
                 $_ENV['db']['pass'],
                 $options
             );
+            
         } catch (PDOException $e) {
 
             throw new PDOException("Ocorreu um erro ao
